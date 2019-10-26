@@ -24,7 +24,7 @@ public class GithubersServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws ServletException, IOException {
 		GithubersServlet.LOGGER
-		.error("L'utilisateur à demandé la page Githubers.jsp");
+		.info("L'utilisateur à demandé la page Githubers.jsp");
 		
 		ArrayList<Githubers> listGithubers = new ArrayList<>();
 
