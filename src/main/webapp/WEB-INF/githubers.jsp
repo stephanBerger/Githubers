@@ -1,7 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-
 <%@ include file="header.jsp"%>
+
+
 <table class="table table-bordered">
 	<thead>
 		<tr>
@@ -13,13 +13,13 @@
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach items="${listGithubers}" var="str">
+		<c:forEach items="${listGithubers}" var="item" varStatus="status">
 			<tr>
-				<td><c:out value="${str.name}" /></td>
-				<td><c:out value="${str.email}" /></td>
-				<td><c:out value="${str.login}" /></td>
-				<td><c:out value="${str.id}" /></td>
-				<td><c:out value="${str.avatarUrl}" /></td>
+				<td><c:out value="${item.name}" /></td>
+				<td>${item.email}</td>
+				<td>${item.login}</td>
+				<td>${item.id}</td>
+				<td>${item.avatarUrl}</td>
 			</tr>
 		</c:forEach>
 	</tbody>
